@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <!-- Red Theme Colors -->
+    <color name="RedColorPrimary">#720d5d</color>
+    <color name="RedColorPrimaryDark">#C90101</color>
+    <color name="RedColorAccent">#e30425</color>
+    <color name="RedprimaryText">#000000</color>
+    <color name="Redicon">#5d1049</color>
+    <color name="RedbuttonNormal">#ff0000</color>
+    <color name="RedbuttonHighlight">#ff554f</color>
+    <color name="RedbuttonText">#FFFFFF</color>
+
+    <!-- Violet Theme Colors -->
+    <color name="violetcolorPrimary">#720d5d</color>
+    <color name="violetcolorPrimaryDark">#430033</color>
+    <color name="violetcolorAccent">#e30425</color>
+    <color name="violetprimaryText">#000000</color>
+    <color name="violeticon">#5d1049</color>
+    <color name="violetbuttonNormal">#720d5d</color>
+    <color name="violetbuttonHighlight">#ff554f</color>
+    <color name="violetbuttonText">#FFFFFF</color>
+
+    <!-- Pink Theme Colors -->
+    <color name="PinkColorPrimary">#e91e63</color>
+    <color name="PinkColorPrimaryDark">#c2185b</color>
+    <color name="PinkColorAccent">#045DE3</color>
+    <color name="PinkprimaryText">#000000</color>
+    <color name="Pinkicon">#5d1049</color>
+    <color name="PinkbuttonNormal">#e91e63</color>
+    <color name="PinkbuttonHighlight">#ff554f</color>
+    <color name="PinkbuttonText">#FFFFFF</color>
+
+    <!-- Purple Theme Colors -->
+    <color name="PurpleColorPrimary">#9c27b0</color>
+    <color name="PurpleColorPrimaryDark">#7b1fa2</color>
+    <color name="PurpleColorAccent">#045DE3</color>
+    <color name="PurpleprimaryText">#000000</color>
+    <color name="Purpleicon">#5d1049</color>
+    <color name="PurplebuttonNormal">#9c27b0</color>
+    <color name="PurplebuttonHighlight">#ff554f</color>
+    <color name="PurplebuttonText">#FFFFFF</color>
+
+    <!-- Deep Purple Theme Colors -->
+    <color name="DeepPurpleColorPrimary">#673ab7</color>
+    <color name="DeepPurpleColorPrimaryDark">#512da8</color>
+    <color name="DeepPurpleColorAccent">#045DE3</color>
+    <color name="DeepPurpleprimaryText">#000000</color>
+    <color name="DeepPurpleicon">#5d1049</color>
+    <color name="DeepPurplebuttonNormal">#673ab7</color>
+    <color name="DeepPurplebuttonHighlight">#ff554f</color>
+    <color name="DeepPurplebuttonText">#FFFFFF</color>
+
+    <!-- Indigo Theme Colors -->
+    <color name="IndigoColorPrimary">#3F51B5</color>
+    <color name="IndigoColorPrimaryDark">#303F9F</color>
+    <color name="IndigoColorAccent">#045DE3</color>
+    <color name="IndigoprimaryText">#000000</color>
+    <color name="Indigoicon">#5d1049</color>
+    <color name="IndigobuttonNormal">#3F51B5</color>
+    <color name="IndigobuttonHighlight">#ff554f</color>
+    <color name="IndigobuttonText">#FFFFFF</color>
+
+    <!-- Blue Theme Colors -->
+    <color name="BlueColorPrimary">#0000ff</color>
+    <color name="BlueColorPrimaryDark">#0202CC</color>
+    <color name="BlueColorAccent">#F9D625</color>
+    <color name="BluePrimaryText">#424242</color>
+    <color name="BlueIcon">#3F51B5</color>
+    <color name="BlueButtonNormal">#0000ff</color>
+    <color name="BlueButtonHighlight">#2196F3</color>
+    <color name="BlueButtonText">#FFFFFF</color>
+
+    <!-- Light Blue Theme Colors -->
+    <color name="LightBlueColorPrimary">#03A9F4</color>
+    <color name="LightBlueColorPrimaryDark">#0288D1</color>
+    <color name="LightBlueColorAccent">#F9D625</color>
+    <color name="LightBluePrimaryText">#424242</color>
+    <color name="LightBlueIcon">#3F51B5</color>
+    <color name="LightBlueButtonNormal">#03A9F4</color>
+    <color name="LightBlueButtonHighlight">#2196F3</color>
+    <color name="LightBlueButtonText">#FFFFFF</color>
+
+    <!-- Cyan Theme Colors -->
+    <color name="CyanColorPrimary">#00BCD4</color>
+    <color name="CyanColorPrimaryDark">#0097A7</color>
+    <color name="CyanColorAccent">#F9D625</color>
+    <color name="CyanPrimaryText">#424242</color>
+    <color name="CyanIcon">#3F51B5</color>
+    <color name="CyanButtonNormal">#00BCD4</color>
+    <color name="CyanButtonHighlight">#2196F3</color>
+    <color name="CyanButtonText">#FFFFFF</color>
+
+    <!-- Teal Blue Theme Colors -->
+    <color name="TealColorPrimary">#009688</color>
+    <color name="TealColorPrimaryDark">#00796B</color>
+    <color name="TealColorAccent">#F9D625</color>
+    <color name="TealPrimaryText">#424242</color>
+    <color name="TealIcon">#3F51B5</color>
+    <color name="TealButtonNormal">#009688</color>
+    <color name="TealButtonHighlight">#2196F3</color>
+    <color name="TealButtonText">#FFFFFF</color>
+
+    <!-- Green Theme Colors -->
+    <color name="GreenColorPrimary">#00FF00</color>
+    <color name="GreenColorPrimaryDark">#02C702</color>
+    <color name="GreenColorAccent">#f9a825</color>
+    <color name="GreenPrimaryText">#424242</color>
+    <color name="GreenIcon">#ff554f</color>
+    <color name="GreenButtonNormal">#00FF00</color>
+    <color name="GreenButtonHighlight">#81c784</color>
+    <color name="GreenButtonText">#FFFFFF</color>
+
+    <!-- Light Green Theme Colors -->
+    <color name="LightGreenColorPrimary">#8BC34A</color>
+    <color name="LightGreenColorPrimaryDark">#689F38</color>
+    <color name="LightGreenColorAccent">#F9D625</color>
+    <color name="LightGreenPrimaryText">#424242</color>
+    <color name="LightGreenIcon">#3F51B5</color>
+    <color name="LightGreenButtonNormal">#8BC34A</color>
+    <color name="LightGreenButtonHighlight">#2196F3</color>
+    <color name="LightGreenButtonText">#FFFFFF</color>
+
+    <!-- Lime Theme Colors -->
+    <color name="LimeColorPrimary">#CDDC39</color>
+    <color name="LimeColorPrimaryDark">#AFB42B</color>
+    <color name="LimeColorAccent">#F9D625</color>
+    <color name="LimePrimaryText">#424242</color>
+    <color name="LimeIcon">#3F51B5</color>
+    <color name="LimeButtonNormal">#CDDC39</color>
+    <color name="LimeButtonHighlight">#2196F3</color>
+    <color name="LimeButtonText">#FFFFFF</color>
+
+    <!-- Yellow Theme Colors -->
+    <color name="YellowColorPrimary">#FFEB3B</color>
+    <color name="YellowColorPrimaryDark">#FBC02D</color>
+    <color name="YellowColorAccent">#F9D625</color>
+    <color name="YellowPrimaryText">#424242</color>
+    <color name="YellowIcon">#3F51B5</color>
+    <color name="YellowButtonNormal">#FFEB3B</color>
+    <color name="YellowButtonHighlight">#2196F3</color>
+    <color name="YellowButtonText">#FFFFFF</color>
+
+    <!-- Amber Theme Colors -->
+    <color name="AmberColorPrimary">#FFC107</color>
+    <color name="AmberColorPrimaryDark">#FFA000</color>
+    <color name="AmberColorAccent">#F9D625</color>
+    <color name="AmberPrimaryText">#424242</color>
+    <color name="AmberIcon">#3F51B5</color>
+    <color name="AmberButtonNormal">#FFC107</color>
+    <color name="AmberButtonHighlight">#2196F3</color>
+    <color name="AmberButtonText">#FFFFFF</color>
+
+    <!-- Orange Theme Colors -->
+    <color name="OrangeColorPrimary">#FF9800</color>
+    <color name="OrangeColorPrimaryDark">#F57C00</color>
+    <color name="OrangeColorAccent">#F9D625</color>
+    <color name="OrangePrimaryText">#424242</color>
+    <color name="OrangeIcon">#3F51B5</color>
+    <color name="OrangeButtonNormal">#FF9800</color>
+    <color name="OrangeButtonHighlight">#2196F3</color>
+    <color name="OrangeButtonText">#FFFFFF</color>
+
+    <!-- Deep Orange Theme Colors -->
+    <color name="DeepOrangeColorPrimary">#FF5722</color>
+    <color name="DeepOrangeColorPrimaryDark">#E64A19</color>
+    <color name="DeepOrangeColorAccent">#F9D625</color>
+    <color name="DeepOrangePrimaryText">#424242</color>
+    <color name="DeepOrangeIcon">#3F51B5</color>
+    <color name="DeepOrangeButtonNormal">#FF5722</color>
+    <color name="DeepOrangeButtonHighlight">#2196F3</color>
+    <color name="DeepOrangeButtonText">#FFFFFF</color>
+
+    <color name="white">#ffffff</color>
+
+</resources>

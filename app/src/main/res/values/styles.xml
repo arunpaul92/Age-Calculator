@@ -1,0 +1,228 @@
+<resources>
+
+    <style name="TextAppearance.App.Widget.TextView" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+    <style name="TextView" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/buttonNormalColor</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/LightBlueColorPrimary</item>
+        <item name="colorPrimaryDark">@color/LightBlueColorPrimaryDark</item>
+        <item name="colorAccent">@color/LightBlueColorAccent</item>
+        <item name="primaryButtonTheme">@style/Widget.Button.Primary</item>
+    </style>
+
+    <style name="AppTheme.Red" parent="AppTheme">
+        <item name="colorPrimary">@color/RedColorPrimary</item>
+        <item name="colorPrimaryDark">@color/RedColorPrimaryDark</item>
+        <item name="colorAccent">@color/RedColorAccent</item>
+        <item name="primaryTextColor">@color/RedprimaryText</item>
+        <item name="buttonNormalColor">@color/RedbuttonNormal</item>
+        <item name="buttonHighlightColor">@color/RedbuttonHighlight</item>
+        <item name="buttonTextColor">@color/RedbuttonText</item>
+        <item name="iconColor">@color/Redicon</item>
+    </style>
+
+    <style name="AppTheme.Pink" parent="AppTheme">
+        <item name="colorPrimary">@color/PinkColorPrimary</item>
+        <item name="colorPrimaryDark">@color/PinkColorPrimaryDark</item>
+        <item name="colorAccent">@color/PinkColorAccent</item>
+        <item name="primaryTextColor">@color/PinkprimaryText</item>
+        <item name="buttonNormalColor">@color/PinkbuttonNormal</item>
+        <item name="buttonHighlightColor">@color/PinkbuttonHighlight</item>
+        <item name="buttonTextColor">@color/PinkbuttonText</item>
+        <item name="iconColor">@color/Pinkicon</item>
+    </style>
+
+    <style name="AppTheme.Purple" parent="AppTheme">
+        <item name="colorPrimary">@color/PurpleColorPrimary</item>
+        <item name="colorPrimaryDark">@color/PurpleColorPrimaryDark</item>
+        <item name="colorAccent">@color/PurpleColorAccent</item>
+        <item name="primaryTextColor">@color/PurpleprimaryText</item>
+        <item name="buttonNormalColor">@color/PurplebuttonNormal</item>
+        <item name="buttonHighlightColor">@color/PurplebuttonHighlight</item>
+        <item name="buttonTextColor">@color/PurplebuttonText</item>
+        <item name="iconColor">@color/Purpleicon</item>
+    </style>
+
+    <style name="AppTheme.DeepPurple" parent="AppTheme">
+        <item name="colorPrimary">@color/DeepPurpleColorPrimary</item>
+        <item name="colorPrimaryDark">@color/DeepPurpleColorPrimaryDark</item>
+        <item name="colorAccent">@color/DeepPurpleColorAccent</item>
+        <item name="primaryTextColor">@color/DeepPurpleprimaryText</item>
+        <item name="buttonNormalColor">@color/DeepPurplebuttonNormal</item>
+        <item name="buttonHighlightColor">@color/DeepPurplebuttonHighlight</item>
+        <item name="buttonTextColor">@color/DeepPurplebuttonText</item>
+        <item name="iconColor">@color/DeepPurpleicon</item>
+    </style>
+
+    <style name="AppTheme.Indigo" parent="AppTheme">
+        <item name="colorPrimary">@color/IndigoColorPrimary</item>
+        <item name="colorPrimaryDark">@color/IndigoColorPrimaryDark</item>
+        <item name="colorAccent">@color/IndigoColorAccent</item>
+        <item name="primaryTextColor">@color/IndigoprimaryText</item>
+        <item name="buttonNormalColor">@color/IndigobuttonNormal</item>
+        <item name="buttonHighlightColor">@color/IndigobuttonHighlight</item>
+        <item name="buttonTextColor">@color/IndigobuttonText</item>
+        <item name="iconColor">@color/Indigoicon</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="colorPrimary">@color/BlueColorPrimary</item>
+        <item name="colorPrimaryDark">@color/BlueColorPrimaryDark</item>
+        <item name="colorAccent">@color/BlueColorAccent</item>
+        <item name="primaryTextColor">@color/BluePrimaryText</item>
+        <item name="buttonNormalColor">@color/BlueButtonNormal</item>
+        <item name="buttonHighlightColor">@color/BlueButtonHighlight</item>
+        <item name="buttonTextColor">@color/BlueButtonText</item>
+        <item name="iconColor">@color/BlueIcon</item>
+    </style>
+
+
+    <style name="AppTheme.LightBlue" parent="AppTheme">
+        <item name="colorPrimary">@color/LightBlueColorPrimary</item>
+        <item name="colorPrimaryDark">@color/LightBlueColorPrimaryDark</item>
+        <item name="colorAccent">@color/LightBlueColorAccent</item>
+        <item name="primaryTextColor">@color/LightBluePrimaryText</item>
+        <item name="buttonNormalColor">@color/LightBlueButtonNormal</item>
+        <item name="buttonHighlightColor">@color/LightBlueButtonHighlight</item>
+        <item name="buttonTextColor">@color/LightBlueButtonText</item>
+        <item name="iconColor">@color/LightBlueIcon</item>
+    </style>
+
+    <style name="AppTheme.Cyan" parent="AppTheme">
+        <item name="colorPrimary">@color/CyanColorPrimary</item>
+        <item name="colorPrimaryDark">@color/CyanColorPrimaryDark</item>
+        <item name="colorAccent">@color/CyanColorAccent</item>
+        <item name="primaryTextColor">@color/CyanPrimaryText</item>
+        <item name="buttonNormalColor">@color/CyanButtonNormal</item>
+        <item name="buttonHighlightColor">@color/CyanButtonHighlight</item>
+        <item name="buttonTextColor">@color/CyanButtonText</item>
+        <item name="iconColor">@color/CyanIcon</item>
+    </style>
+
+    <style name="AppTheme.Teal" parent="AppTheme">
+        <item name="colorPrimary">@color/TealColorPrimary</item>
+        <item name="colorPrimaryDark">@color/TealColorPrimaryDark</item>
+        <item name="colorAccent">@color/TealColorAccent</item>
+        <item name="primaryTextColor">@color/TealPrimaryText</item>
+        <item name="buttonNormalColor">@color/TealButtonNormal</item>
+        <item name="buttonHighlightColor">@color/TealButtonHighlight</item>
+        <item name="buttonTextColor">@color/TealButtonText</item>
+        <item name="iconColor">@color/TealIcon</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="AppTheme">
+        <item name="colorPrimary">@color/GreenColorPrimary</item>
+        <item name="colorPrimaryDark">@color/GreenColorPrimaryDark</item>
+        <item name="colorAccent">@color/GreenColorAccent</item>
+        <item name="primaryTextColor">@color/GreenPrimaryText</item>
+        <item name="buttonNormalColor">@color/GreenButtonNormal</item>
+        <item name="buttonHighlightColor">@color/GreenButtonHighlight</item>
+        <item name="buttonTextColor">@color/GreenButtonText</item>
+        <item name="iconColor">@color/GreenIcon</item>
+    </style>
+
+    <style name="AppTheme.LightGreen" parent="AppTheme">
+        <item name="colorPrimary">@color/LightGreenColorPrimary</item>
+        <item name="colorPrimaryDark">@color/LightGreenColorPrimaryDark</item>
+        <item name="colorAccent">@color/LightGreenColorAccent</item>
+        <item name="primaryTextColor">@color/LightGreenPrimaryText</item>
+        <item name="buttonNormalColor">@color/LightGreenButtonNormal</item>
+        <item name="buttonHighlightColor">@color/LightGreenButtonHighlight</item>
+        <item name="buttonTextColor">@color/LightGreenButtonText</item>
+        <item name="iconColor">@color/LightGreenIcon</item>
+    </style>
+
+    <style name="AppTheme.Lime" parent="AppTheme">
+        <item name="colorPrimary">@color/LimeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/LimeColorPrimaryDark</item>
+        <item name="colorAccent">@color/LimeColorAccent</item>
+        <item name="primaryTextColor">@color/LimePrimaryText</item>
+        <item name="buttonNormalColor">@color/LimeButtonNormal</item>
+        <item name="buttonHighlightColor">@color/LimeButtonHighlight</item>
+        <item name="buttonTextColor">@color/LimeButtonText</item>
+        <item name="iconColor">@color/LimeIcon</item>
+    </style>
+
+    <style name="AppTheme.Yellow" parent="AppTheme">
+        <item name="colorPrimary">@color/YellowColorPrimary</item>
+        <item name="colorPrimaryDark">@color/YellowColorPrimaryDark</item>
+        <item name="colorAccent">@color/YellowColorAccent</item>
+        <item name="primaryTextColor">@color/YellowPrimaryText</item>
+        <item name="buttonNormalColor">@color/YellowButtonNormal</item>
+        <item name="buttonHighlightColor">@color/YellowButtonHighlight</item>
+        <item name="buttonTextColor">@color/YellowButtonText</item>
+        <item name="iconColor">@color/YellowIcon</item>
+    </style>
+
+    <style name="AppTheme.Amber" parent="AppTheme">
+        <item name="colorPrimary">@color/AmberColorPrimary</item>
+        <item name="colorPrimaryDark">@color/AmberColorPrimaryDark</item>
+        <item name="colorAccent">@color/AmberColorAccent</item>
+        <item name="primaryTextColor">@color/AmberPrimaryText</item>
+        <item name="buttonNormalColor">@color/AmberButtonNormal</item>
+        <item name="buttonHighlightColor">@color/AmberButtonHighlight</item>
+        <item name="buttonTextColor">@color/AmberButtonText</item>
+        <item name="iconColor">@color/AmberIcon</item>
+    </style>
+
+    <style name="AppTheme.Orange" parent="AppTheme">
+        <item name="colorPrimary">@color/OrangeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/OrangeColorPrimaryDark</item>
+        <item name="colorAccent">@color/OrangeColorAccent</item>
+        <item name="primaryTextColor">@color/OrangePrimaryText</item>
+        <item name="buttonNormalColor">@color/OrangeButtonNormal</item>
+        <item name="buttonHighlightColor">@color/OrangeButtonHighlight</item>
+        <item name="buttonTextColor">@color/OrangeButtonText</item>
+        <item name="iconColor">@color/OrangeIcon</item>
+    </style>
+
+    <style name="AppTheme.DeepOrange" parent="AppTheme">
+        <item name="colorPrimary">@color/DeepOrangeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/DeepOrangeColorPrimaryDark</item>
+        <item name="colorAccent">@color/DeepOrangeColorAccent</item>
+        <item name="primaryTextColor">@color/DeepOrangePrimaryText</item>
+        <item name="buttonNormalColor">@color/DeepOrangeButtonNormal</item>
+        <item name="buttonHighlightColor">@color/DeepOrangeButtonHighlight</item>
+        <item name="buttonTextColor">@color/DeepOrangeButtonText</item>
+        <item name="iconColor">@color/DeepOrangeIcon</item>
+    </style>
+
+
+    <style name="AppTheme.violet" parent="AppTheme">
+        <item name="colorPrimary">@color/violetcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/violetcolorPrimaryDark</item>
+        <item name="colorAccent">@color/violetcolorAccent</item>
+        <item name="primaryTextColor">@color/violetprimaryText</item>
+        <item name="buttonNormalColor">@color/violetbuttonNormal</item>
+        <item name="buttonHighlightColor">@color/violetbuttonHighlight</item>
+        <item name="buttonTextColor">@color/violetbuttonText</item>
+        <item name="iconColor">@color/violeticon</item>
+    </style>
+
+
+    <style name="Widget.Button.Primary" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">?attr/buttonNormalColor</item>
+        <item name="colorControlHighlight">?attr/buttonHighlightColor</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+    </style>
+
+    <style name="MainActionBar.Popup" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">?attr/buttonNormalColor</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btnColor" parent="">
+        <item name="android:background">@color/BlueIcon</item>
+        <item name="android:shape">ring</item>
+    </style>
+
+
+</resources>

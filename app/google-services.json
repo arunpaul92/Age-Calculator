@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698985952794",
+    "firebase_url": "https://age-calculator-daf80.firebaseio.com",
+    "project_id": "age-calculator-daf80",
+    "storage_bucket": "age-calculator-daf80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698985952794:android:96ed122e03174860a103a3",
+        "android_client_info": {
+          "package_name": "com.arunpaul.agecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698985952794-1k3dnl5a301g1vmroosqfjqlrsuv4083.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj9pYjEP5q6EA-AWi1xNEJzENPvS4CfP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698985952794-1k3dnl5a301g1vmroosqfjqlrsuv4083.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

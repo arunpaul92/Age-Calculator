@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/focus"
+        android:layout_width="0.0px"
+        android:layout_height="0.0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="?attr/buttonNormalColor"
+        android:elevation="4.0dip"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/MainActionBar.Popup" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_today_date"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10.0dip"
+                android:text="Today's  Date"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/today_date_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12.0dip"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/label_today_date" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_today_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                app:layout_constraintStart_toEndOf="@+id/label_today_date"
+                app:layout_constraintTop_toBottomOf="@id/label_today_date">
+
+                <EditText
+                    android:id="@+id/today1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18.0dip"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="24"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/separator1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/separator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:text="-"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/today1"
+                    app:layout_constraintRight_toLeftOf="@id/today2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/today2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="02"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/separator1"
+                    app:layout_constraintRight_toLeftOf="@id/separator2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/separator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/today2"
+                    app:layout_constraintRight_toLeftOf="@id/today3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/today3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="2019"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/separator2"
+                    app:layout_constraintRight_toLeftOf="@id/picker_date_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/picker_date_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18.0dip"
+                    android:src="@drawable/ic_date_picker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/today3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/label_date_birth"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15.0dip"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_today_date" />
+
+            <TextView
+                android:id="@+id/birth_date_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12.0dip"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/label_date_birth" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_date_birth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                app:layout_constraintStart_toEndOf="@+id/label_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/label_date_birth">
+
+                <EditText
+                    android:id="@+id/birth1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18.0dip"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="dd"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/separator3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/separator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:text="-"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/birth1"
+                    app:layout_constraintRight_toLeftOf="@id/birth2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/birth2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/separator3"
+                    app:layout_constraintRight_toLeftOf="@id/separator4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/separator4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/birth2"
+                    app:layout_constraintRight_toLeftOf="@id/birth3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/birth3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="yyyy"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/separator4"
+                    app:layout_constraintRight_toLeftOf="@id/picker_date_birth_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/picker_date_birth_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18.0dip"
+                    android:src="@drawable/ic_date_picker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/birth3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Calculate"
+                android:theme="?attr/primaryButtonTheme"
+                app:layout_constraintLeft_toLeftOf="@id/layout_date_birth"
+                app:layout_constraintRight_toLeftOf="@id/clear_button"
+                app:layout_constraintTop_toBottomOf="@id/layout_date_birth" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Clear"
+                android:theme="?attr/primaryButtonTheme"
+                app:layout_constraintLeft_toRightOf="@id/btnCalculate"
+                app:layout_constraintRight_toRightOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/layout_date_birth" />
+
+            <TextView
+                android:id="@+id/label_age"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:text="Age"
+                android:textSize="18.0sp"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/clear_button" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                app:layout_constraintStart_toEndOf="@+id/label_age"
+                app:layout_constraintTop_toBottomOf="@id/label_age">
+
+                <TextView
+                    android:id="@+id/label_years"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years"
+                    app:layout_constraintBottom_toTopOf="@id/age_years"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/label_months"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/label_years"
+                    app:layout_constraintRight_toRightOf="@id/label_years"
+                    app:layout_constraintTop_toBottomOf="@id/label_years" />
+
+                <TextView
+                    android:id="@+id/label_months"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months"
+                    app:layout_constraintBottom_toTopOf="@id/age_months"
+                    app:layout_constraintLeft_toRightOf="@id/label_years"
+                    app:layout_constraintRight_toLeftOf="@id/label_days"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age_months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/label_months"
+                    app:layout_constraintRight_toRightOf="@id/label_months"
+                    app:layout_constraintTop_toBottomOf="@id/label_months" />
+
+                <TextView
+                    android:id="@+id/label_days"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    app:layout_constraintBottom_toTopOf="@id/age_months"
+                    app:layout_constraintLeft_toRightOf="@id/label_months"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/label_days"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/label_days"
+                    app:layout_constraintTop_toBottomOf="@id/label_months" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/label_next_birthday"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Next Birthday"
+                android:textSize="18.0sp"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/layout_age" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_next_birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                app:layout_constraintStart_toEndOf="@+id/label_next_birthday"
+                app:layout_constraintTop_toBottomOf="@id/label_next_birthday">
+
+                <TextView
+                    android:id="@+id/label_years_next_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years"
+                    android:textColor="#ff3741ae"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/years_next_birth"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/label_months_next_birth"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/years_next_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/label_years_next_birth"
+                    app:layout_constraintRight_toRightOf="@id/label_years_next_birth"
+                    app:layout_constraintTop_toBottomOf="@id/label_years_next_birth" />
+
+                <TextView
+                    android:id="@+id/label_months_next_birth"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months"
+                    app:layout_constraintBottom_toTopOf="@id/months_next_birth"
+                    app:layout_constraintLeft_toRightOf="@id/label_years_next_birth"
+                    app:layout_constraintRight_toLeftOf="@id/label_days_next_birth"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/months_next_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/label_months_next_birth"
+                    app:layout_constraintRight_toRightOf="@id/label_months_next_birth"
+                    app:layout_constraintTop_toBottomOf="@id/label_months_next_birth" />
+
+                <TextView
+                    android:id="@+id/label_days_next_birth"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    app:layout_constraintBottom_toTopOf="@id/days_next_birth"
+                    app:layout_constraintLeft_toRightOf="@id/label_months_next_birth"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/days_next_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="25.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/label_days_next_birth"
+                    app:layout_constraintRight_toRightOf="@id/label_days_next_birth"
+                    app:layout_constraintTop_toBottomOf="@id/label_days_next_birth" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/layout_next_birthday" />
+
+            <TextView
+                android:id="@+id/label_zodiac"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Zodiac"
+                android:textSize="18.0sp"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/banner_container" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_zodiac"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="12.0dip"
+                android:paddingBottom="12.0dip"
+                app:layout_constraintStart_toEndOf="@+id/label_zodiac"
+                app:layout_constraintTop_toBottomOf="@id/label_zodiac">
+
+                <TextView
+                    android:id="@+id/tv_zodiac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="30.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    tools:layout_editor_absoluteX="24dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/label_extra"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Extra"
+                android:textSize="18.0sp"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/layout_zodiac" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_extra"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                app:layout_constraintStart_toEndOf="@+id/label_extra"
+                app:layout_constraintTop_toBottomOf="@id/label_extra">
+
+                <View
+                    android:id="@+id/separator_line"
+                    android:layout_width="2.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="?attr/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/label_total_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Years"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toTopOf="@id/separator_line" />
+
+                <TextView
+                    android:id="@+id/total_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toTopOf="@id/separator_line" />
+
+                <TextView
+                    android:id="@+id/label_total_months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Months"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_years" />
+
+                <TextView
+                    android:id="@+id/total_months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_years" />
+
+                <TextView
+                    android:id="@+id/label_total_weeks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Weeks"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_months" />
+
+                <TextView
+                    android:id="@+id/total_weeks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_months" />
+
+                <TextView
+                    android:id="@+id/label_total_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Days"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_weeks" />
+
+                <TextView
+                    android:id="@+id/total_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_weeks" />
+
+                <TextView
+                    android:id="@+id/label_total_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Hours"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_days" />
+
+                <TextView
+                    android:id="@+id/total_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_days" />
+
+                <TextView
+                    android:id="@+id/label_total_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Minutes"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_hours" />
+
+                <TextView
+                    android:id="@+id/total_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_hours" />
+
+                <TextView
+                    android:id="@+id/label_total_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:text="Total Seconds"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintBottom_toBottomOf="@id/separator_line"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_minutes" />
+
+                <TextView
+                    android:id="@+id/total_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintBottom_toBottomOf="@id/separator_line"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line"
+                    app:layout_constraintTop_toBottomOf="@id/label_total_minutes" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/banner_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/layout_extra" />
+
+            <TextView
+                android:id="@+id/label_upcoming"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Upcoming Birthdays"
+                android:textSize="18.0sp"
+                android:theme="?attr/buttonNormalColor"
+                app:layout_constraintStart_toStartOf="@id/layout_date_birth"
+                app:layout_constraintTop_toBottomOf="@id/banner_container2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_upcoming"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dip"
+                android:background="@drawable/shape_background"
+                android:paddingTop="5.0dip"
+                android:paddingBottom="5.0dip"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/label_upcoming"
+                app:layout_constraintTop_toBottomOf="@id/label_upcoming">
+
+                <View
+                    android:id="@+id/separator_line2"
+                    android:layout_width="2.0dip"
+                    android:layout_height="0.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="?attr/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toTopOf="@id/separator_line2" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toTopOf="@id/separator_line2" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate1" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay1" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate2" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay2" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate3" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay3" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate4" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay4" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate5" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay5" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate6" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay6" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate7" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay7" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate8" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay8" />
+
+                <TextView
+                    android:id="@+id/tv_NextDate10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintBottom_toBottomOf="@id/separator_line2"
+                    app:layout_constraintRight_toLeftOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDate9" />
+
+                <TextView
+                    android:id="@+id/tv_NextDay10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp"
+                    app:layout_constraintBottom_toBottomOf="@id/separator_line2"
+                    app:layout_constraintLeft_toRightOf="@id/separator_line2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_NextDay9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_upcoming"
+                app:layout_constraintStart_toEndOf="@+id/layout_upcoming"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

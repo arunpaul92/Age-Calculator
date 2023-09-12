@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="bottom"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/banner_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_container"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnRedTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_red" />
+
+        <Button
+            android:id="@+id/btnPinkTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_pink" />
+
+        <Button
+            android:id="@+id/btnPurpleTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_purple" />
+
+        <Button
+            android:id="@+id/btnDeepPurpleTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_deeppurple" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnBlueTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_blue" />
+
+        <Button
+            android:id="@+id/btnIndigoTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_indigo" />
+
+        <Button
+            android:id="@+id/btnLightBlueTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_lightblue" />
+
+        <Button
+            android:id="@+id/btnCyanTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_cyan" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTealTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_teal" />
+
+        <Button
+            android:id="@+id/btnGreenTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_green" />
+
+        <Button
+            android:id="@+id/btnLightGreenTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_lightgreen" />
+
+        <Button
+            android:id="@+id/btnLimeTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_lime" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_below="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnYellowTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_yellow" />
+
+        <Button
+            android:id="@+id/btnAmberTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_amber" />
+
+        <Button
+            android:id="@+id/btnOrangeTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_orange" />
+
+        <Button
+            android:id="@+id/btnDeepOrangeTheme"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_deeporange" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
