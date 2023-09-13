@@ -567,7 +567,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                     Intent intent4 = new Intent(MainActivity.this, PrivacyPolacyActivaty.class);
                     startActivity(intent4);
                 } else {
-                    String url2 = "http://techstudio.ml/AgeCalculator/privacy_policy.html";
+                    String url2 = "https://eimsinventory.in/android/application/PrivacyPolicy/AgeCalculator/PrivacyPloicy.html";
                     Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
                     startActivity(intent4);
                 }

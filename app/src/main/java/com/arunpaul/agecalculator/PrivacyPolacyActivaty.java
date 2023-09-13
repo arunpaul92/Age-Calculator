@@ -39,7 +39,7 @@ public class PrivacyPolacyActivaty extends AppCompatActivity {
                 }
             });
 
-            webView.loadUrl("http://techstudio.ml/AgeCalculator/privacy_policy.html");
+            webView.loadUrl("https://eimsinventory.in/android/application/PrivacyPolicy/AgeCalculator/PrivacyPloicy.html");
             setContentView(webView);
 
         }

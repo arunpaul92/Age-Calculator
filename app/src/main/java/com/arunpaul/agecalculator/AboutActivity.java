@@ -13,7 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.facebook.ads.*;
 
-public class AboutActivity extends BaseActivity {
+public class AboutActivity extends BaseActivity{
     InterstitialAd fbInterstitialAd;
 
     @Override
@@ -59,7 +59,7 @@ public class AboutActivity extends BaseActivity {
                     Intent intent2 = new Intent(AboutActivity.this, PrivacyPolacyActivaty.class);
                     startActivity(intent2);
                 } else {
-                    String url2 = "http://techstudio.ml/AgeCalculator/privacy_policy.html";
+                    String url2 = "https://eimsinventory.in/android/application/PrivacyPolicy/AgeCalculator/PrivacyPloicy.html";
                     Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
                     startActivity(intent2);
                 }
